@@ -1,0 +1,66 @@
+.metric-card {
+  background: var(--color-white);
+  border: var(--border-width) solid var(--color-gray-200);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  min-width: 200px;
+  text-align: center;
+  transition: border-color 0.2s ease;
+}
+
+.metric-card:hover {
+  border-color: var(--color-gray-300);
+}
+
+.metric-label {
+  font-size: var(--font-size-small);
+  color: var(--color-gray-300);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--spacing-sm);
+  font-weight: 600;
+}
+
+.metric-value {
+  font-size: var(--font-size-3xlarge);
+  font-weight: 700;
+  color: var(--color-black);
+  line-height: 1;
+  margin-bottom: var(--spacing-xs);
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+}
+
+.metric-number {
+  font-variant-numeric: tabular-nums;
+}
+
+.metric-unit {
+  font-size: var(--font-size-large);
+  color: var(--color-gray-300);
+  font-weight: 600;
+}
+
+.metric-loading {
+  color: var(--color-gray-400);
+}
+
+.metric-subtitle {
+  font-size: var(--font-size-small);
+  color: var(--color-gray-400);
+  margin-top: var(--spacing-xs);
+}
+
+@media (max-width: 768px) {
+  .metric-card {
+    min-width: 150px;
+    padding: var(--spacing-md);
+  }
+
+  .metric-value {
+    font-size: var(--font-size-2xlarge);
+  }
+}
