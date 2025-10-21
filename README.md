@@ -257,18 +257,6 @@ Access metrics at `http://localhost:3000/metrics`:
 - [ ] Server-side scheduled synthetic runs
 - [ ] Long-run soak test mode (5-10 minutes)
 
-## License
-
-[Your License Here]
-
-## Contributing
-
-Contributions welcome! Please read the requirements.md for detailed specifications.
-
-## References
-
-- Original Requirements: See `requirements.md`
-- RFC 3550: RTP Jitter Calculation
 - Speedtest Methodology: Multi-stream, warm-up, percentile-based calculations
 
 ---
