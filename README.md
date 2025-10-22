@@ -74,14 +74,23 @@ Client Browser ──► SASE PoP/Portal ──► Private Tunnel ──► Appl
    The backend will run on `http://localhost:3000`
 
 5. **Start the frontend development server**
-   ```bash
-   cd frontend
-   npm run dev
-   ```
+   create `.env` file fle in the same directory, and add below to the into the .env file `<IP>` part add your machine IP, which users will access it.
+  ```bash
+cd frontend
+touch .env
+nano .env (or vi if you are a freak)
+```
+  ```env
+    VITE_API_URL=http://<IP>:3000
+  ```
+  ```bash
+   npm run dev -- --host <IP>
+  ```
 
-   The frontend will run on `http://localhost:5173` (or another port if 5173 is taken)
+   The frontend will run on `http://<IP>:5173` (or another port if 5173 is taken).
+   
 
-6. **Open your browser**
+7. **Open your browser**
    Navigate to `http://localhost:5173` and click "Start Test"
 
 ## API Endpoints
@@ -262,3 +271,6 @@ Access metrics at `http://localhost:3000/metrics`:
 ---
 
 **Note**: This application is designed specifically for testing SASE private access connections. For public internet speed testing, use established services like Ookla Speedtest.
+
+---
+***Special Credits***: Claudie-boi, ChatGpity-boi, Gemini-boi for their combined efforts <3
